@@ -8,12 +8,18 @@ jupyter = "*"
 ipython = "*"
 yapf = "*"
 flake8 = "*"
+pylint = "*"
+papermill = "*"
 
 [packages]
-tensorflow = "*"
 matplotlib = "*"
+tensorflow-gpu = ">=2.0.0"
 tensorflow-probability = "*"
 tensorflow-datasets = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true

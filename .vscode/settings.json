@@ -1,5 +1,6 @@
 {
-    "python.pythonPath": "/Users/junki/.local/share/virtualenvs/NormalizingFlows-G7Qw917w/bin/python",
+    "python.pythonPath": "/home/junki/.local/share/virtualenvs/NormalizingFlows-vJyvwCij/bin/python",
     "python.formatting.provider": "yapf",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "terminal.integrated.cwd": "/home/junki/Work/NormalizingFlows"
 }
