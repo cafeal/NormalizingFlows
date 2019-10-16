@@ -1,0 +1,24 @@
+version: "2.3"
+services:
+    app:
+        runtime: nvidia
+        build: .
+        volumes:
+            - .:/work
+            - ~/.jupyter:/root/.jupyter
+            - tensorflow_datasets:/root/tensorflow_datasets
+        ports:
+            - 9001:8888
+        command: ["jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "--allow-root"]
+
+    tensorboard:
+        runtime: nvidia
+        build: .
+        volumes:
+            - .:/work
+        ports:
+            - 9002:6006
+        command: ["tensorboard", "--logdir=./logs", "--host=0.0.0.0"]
+
+volumes:
+    tensorflow_datasets:
