@@ -13,13 +13,12 @@ papermill = "*"
 
 [packages]
 matplotlib = "*"
-tensorflow-gpu = ">=2.0.0"
 tensorflow-probability = "*"
 tensorflow-datasets = "*"
 pillow = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.6"
 
 [pipenv]
 allow_prereleases = true
